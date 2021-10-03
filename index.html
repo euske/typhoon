@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>We Are Typhoon - by euske for LD49 "Unstable"</title>
+<style>
+canvas {
+ image-rendering: -moz-crisp-edges;
+ image-rendering: crisp-edges;
+ image-rendering: pixelated;
+}
+</style>
+<script language="javascript" src="js/game.js"></script>
+<body bgcolor="black" text="white" link="cyan" onload="main();">
+<h1 align=center>We Are Typhoon</h1>
+<div style="margin: 1em;" align=center>
+  <p> Ludum Dare 49, 2021/10/01, "Unstable"<br>
+    <strong>(Allow autoplay for music!)</strong>
+  <div id="game" style="position: relative; width: 512px; height: 512px;"></div>
+</div>
+<div>
+<center><u>Instructions</u></center>
+<ul style="width: 40em; margin: auto;">
+  <li> Control the typhoon passing through Japan / Korea. (WASD or mouse)
+  <li> Typhoon naturally drifts toward northeast.
+  <li> Staying on ocean = gaining power (less pressure).
+  <li> Touching a land or city = losing power (more pressure).
+  <li> Game ends when it reaches the northeast corner or becomes too small.
+  <li> You can aim for either minimizing or maximizing the casualties.
+</ul>
+</div>
+<div align=right><a href="https://github.com/euske/typhoon">Source Code</a></div>
+<div style="display:none;">
+  <img id="font" src="assets/font.png">
+  <img id="map" src="assets/map.png">
+  <audio id="scream1" src="assets/scream1.mp3" crossorigin="anonymous" preload="auto"></audio>
+  <audio id="scream2" src="assets/scream2.mp3" crossorigin="anonymous" preload="auto"></audio>
+  <audio id="scream3" src="assets/scream3.mp3" crossorigin="anonymous" preload="auto"></audio>
+  <audio id="typoon2" src="assets/typoon2.mp3" crossorigin="anonymous" preload="auto"></audio>
+</div>
+</body>
